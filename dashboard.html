@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HSR Motors CRM – Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-50 text-slate-800">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between p-4 bg-white shadow-sm">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-md bg-gradient-to-br from-sky-600 to-green-500 flex items-center justify-center text-white font-bold">HSR</div>
+      <div>
+        <div class="font-semibold">HSR Motors</div>
+        <div class="text-xs text-slate-500">Dealer CRM • Desktop web app</div>
+      </div>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="text-sm text-slate-600">Welcome, Business Manager</div>
+      <div class="w-9 h-9 rounded-full bg-slate-200 flex items-center justify-center">BM</div>
+    </div>
+  </header>
+
+  <div class="flex">
+    <!-- Sidebar -->
+    <aside class="w-64 p-4 border-r bg-white">
+      <nav class="flex flex-col gap-2">
+        <a href="leads.html" class="text-left p-2 rounded hover:bg-slate-50">• Lead listings</a>
+        <a href="dashboard.html" class="text-left p-2 rounded bg-slate-100">• Dashboard</a>
+        <a href="management.html" class="text-left p-2 rounded hover:bg-slate-50">• Lead management</a>
+
+        <div class="mt-4 text-xs text-slate-500">Automations</div>
+        <div class="mt-2 text-sm">
+          <div class="flex items-center justify-between">
+            <div>Auto-assign</div>
+            <input type="checkbox" checked />
+          </div>
+          <div class="flex items-center justify-between mt-2">
+            <div>Follow-up reminders</div>
+            <input type="checkbox" checked />
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="flex-1 p-6">
+      <h2 class="text-xl font-semibold mb-4">Dashboard</h2>
+
+      <div class="grid grid-cols-4 gap-4">
+        <div class="bg-white p-4 rounded shadow-sm">
+          <div class="text-xs">Total Leads</div>
+          <div class="text-2xl font-bold">3</div>
+        </div>
+        <div class="bg-white p-4 rounded shadow-sm">
+          <div class="text-xs">New</div>
+          <div class="text-2xl font-bold">1</div>
+        </div>
+        <div class="bg-white p-4 rounded shadow-sm">
+          <div class="text-xs">Contacted</div>
+          <div class="text-2xl font-bold">1</div>
+        </div>
+        <div class="bg-white p-4 rounded shadow-sm">
+          <div class="text-xs">Conversion</div>
+          <div class="text-2xl font-bold">33%</div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="p-4 text-xs text-slate-500 text-center">
+   • HSR Motors  • 
+  </footer>
+</body>
+</html>
